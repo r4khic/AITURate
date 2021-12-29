@@ -1,0 +1,61 @@
+{% extends 'accounts/base.html' %}
+{% block title %}
+    Teacher
+{% endblock %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                 role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Sarzhan Askapov</text>
+            </svg>
+
+            <div class="card-body">
+                <p class="card-text">Teacher of AITU.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Rate</button>
+                    </div>
+                    <small class="text-muted">3 votes</small>
+                </div>
+            </div>
+        </div>
+        <div class="bd-example">
+            <label for="customRange1" class="form-label">Rating range</label>
+            <input type="range" class="form-range" id="customRange1">
+        </div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Upvotes</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Rakhatbek</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Alexey</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Matvey</td>
+                <td>100</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td>Totals</td>
+                <td>100</td>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+
+{% endblock %}
