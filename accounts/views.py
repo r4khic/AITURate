@@ -48,7 +48,6 @@ def register(request):
             return redirect('register')
         query = 'INSERT INTO `users`(`name`, `surname`, `login`, `email`,`password`) VALUES (%s,%s,%s,%s,%s)'
         cursor.execute(query, (user.f_name, user.l_name, user.login, user.email, user.password))
-        cursor.close()
 
     return render(request, 'accounts/registration.html')
 
